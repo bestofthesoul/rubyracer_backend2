@@ -28,7 +28,7 @@ $(document).ready(function() {
     
     // STATUS WILL BE TRUE AFTER SUCCESSFULLY gamestart
     if (status == "true") {
-      console.log("true");
+
       if(code == 38) {
         console.log("Player 1 pressed");
         position1 = update_player_position('player1', position1);
@@ -37,7 +37,7 @@ $(document).ready(function() {
         check();
 
       } else if(code == 40) {
-        console.log("Player2 pressed");
+
         position2 = update_player_position('player2', position2);
         document.querySelector('.result2').innerHTML = "Player 2 - track: " + position2;
 
