@@ -1,0 +1,12 @@
+<p>Winning Player: <%= @game.winner.name %></p>
+<p>Player 1: <%= @game.player1.name %></p>
+		<form action="/players/<%= @game.player1.id%>/profile">
+			<input type="submit" value="View Player Profile">
+		</form>
+<br>
+<p>Player 2: <%= @game.player2.name %></p>
+		<form action="/players/<%= @game.player2.id%>/profile">
+			<input type="submit" value="View Player Profile">
+		</form>
+
+

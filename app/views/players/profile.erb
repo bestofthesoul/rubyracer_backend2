@@ -1,0 +1,7 @@
+<h1>Player Name: <%= @player.name %></h1>
+
+<h2>Games</h2>
+<% @games.each_with_index do |game, index| %>
+<!-- "#{index + 1}. #{game.winner.try(:name)}" -->
+	<p><%= "#{index+1}. Winner: #{game.winner.try(:name)}" %></p>
+<% end %>

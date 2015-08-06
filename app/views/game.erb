@@ -1,0 +1,70 @@
+<h5>Gentle reminder: Press Enter to START game, Up and Down arrow key to move players</h5>
+
+<br><br>
+  <h5 id="2" data-game-id=<%= @game.id %> data-player1-id=<%= @player1.id %> data-player2-id=<%= @player2.id %>>
+  </h5>
+
+
+<table class="racer_table">
+ 
+  <tr>
+    <td>Player 1: <%=@player1.name%></td>
+  </tr>
+
+   <tr id="player1_strip">
+    <td class="active"></td>           
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+
+     <tr>
+    <td>Player 2: <%=@player2.name%></td>
+  </tr>
+
+  <tr id="player2_strip">
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>   
+  </tr>
+</table>
+
+
+<br><br>
+<div class="result1"></div>
+<br>
+<div class="result2"></div>
+<br>
+<div class="winner"></div>
+<br>
+<div class="timestart"></div>
+<br>
+<div class="timeend"></div>
+<br>
+<div class="timetaken"></div>
+<br>
+<button id='1'>Restart Game</button>
